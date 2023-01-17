@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 1rem;
-    background: palegoldenrod;
+    background: ${props => props.theme.background};
+    color: ${props => props.theme.text};
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 `;
